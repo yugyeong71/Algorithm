@@ -5,18 +5,30 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 
-        int num = sc.nextInt();
+    int N = sc.nextInt();
 
-        int result = factorial(num);
-        System.out.println(result);
+    if(N < 10){
+        N *= 10;
     }
 
-    public static int factorial(int N){
-        if(N < 1) {
-            return 1;
-        }
-        return N * factorial(N-1);
+    int N1 = 0, N2 = 0;
+    int cnt = 0;
+    int result = N;
+
+    while (true){
+        N1 = result / 10;
+        N2 = result % 10;
+        result = N1 + N2;
+
+        result = N2 * 10 + result % 10;
+
+        cnt ++;
+
+        if(result == N) break;
+    }
+
+    System.out.println(cnt);
     }
 }
