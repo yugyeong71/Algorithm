@@ -6,8 +6,7 @@ public class AlarmClock2884 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        int H;
-        int M;
+        int H, M;
 
         H = sc.nextInt();
         M = sc.nextInt();
