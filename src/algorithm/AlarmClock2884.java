@@ -11,8 +11,8 @@ public class AlarmClock2884 {
         H = sc.nextInt();
         M = sc.nextInt();
 
-        if((M-45)<0) {
-            M = (M+15);
+        if((M - 45) < 0) {
+            M = (M + 15);
                 if((H - 1) <0) {
                  H = 23;
             }
