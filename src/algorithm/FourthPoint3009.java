@@ -25,7 +25,7 @@ public class FourthPoint3009 {
         }
 
         if(A[1] == B[1]){
-            Y = C[0];
+            Y = C[1];
         }
 
         else if(A[1] == C[1]){
