@@ -8,8 +8,8 @@ public class SafariWorld2420 {
 
         int A = sc.nextInt();
         int B = sc.nextInt();
-        int Sum = Math.abs(A) + Math.abs(B);
+        int Sub = Math.abs(A-B);
 
-        System.out.println(Sum);
+        System.out.println(Sub);
     }
 }
