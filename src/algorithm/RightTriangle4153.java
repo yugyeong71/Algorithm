@@ -18,17 +18,16 @@ public class RightTriangle4153 {
             if((side1 * side1 + side2 * side2) == side3 * side3){
                 System.out.println("right");
             }
-            else if((side3 * side3 + side2 * side2) == side1 * side1){
+            else if((side1 * side1 + side3 * side3) == side2 * side2){
                 System.out.println("right");
             }
-            else if((side1 * side1 + side3 * side3) == side2 * side2){
+            else if((side2 * side2 + side3 * side3) == side1 * side1){
                 System.out.println("right");
             }
             else{
                 System.out.println("wrong");
             }
         }
-
 
     }
 }
